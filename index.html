@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gitter</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="https://apps.upcwangying.com/rn/demo/image.57x57.png">
+    <link href="./css/app.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/demo.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="img-container" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                <div id="overlay" class="hidden">
+                    <span>扫码隐藏</span>
+                </div>
+                <img src="./images/wechat-code.jpg" />
+            </div>
+            <a href="#" class="title">微信小程序</a>
+        </div>
+        <div class="container">
+            <div class="img-container" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                <div id="overlay" class="hidden">
+                    <span>扫码隐藏</span>
+                </div>
+                <img src="./images/alipay-code.jpg" />
+            </div>
+            <a href="#" class="title">支付宝小程序</a>
+        </div>
+        <div class="container">
+            <div class="img-container" onmouseenter="onMouseEnter(this)" onmouseleave="onMouseLeave(this)">
+                <div id="overlay" class="hidden">
+                    <span>扫码隐藏</span>
+                </div>
+                <img src="./images/toutiao-code.png" />
+            </div>
+            <a href="#" class="title">今日头条小程序</a>
+        </div>
+    </div>
+    <div class="terms-wrapper">
+        <a class="terms" href="./terms-and-conditions.html" target="_blank">Terms &amp; Conditions</a>&nbsp;&nbsp;
+        <a class="terms" href="./privacy.html" target="_blank">Privacy</a>&nbsp;&nbsp;
+        <a class="terms" href="https://github.com/cwamp" target="_blank">GitHub</a>&nbsp;&nbsp;
+        <a href="mailto:me@upcwangying.com">Contact me</a>
+    </div>
+</body>
+<script type="text/javascript">
+    function onMouseEnter(ele) {
+        const overlay = ele.firstElementChild;
+        overlay.className = "overlay";
+    }
+
+    function onMouseLeave(ele) {
+        const overlay = ele.firstElementChild;
+        overlay.className = "hidden";
+    }
+</script>
+</html>
